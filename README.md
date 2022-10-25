@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/MarcosRubi/Fylo-landing-page-with-two-column-layout)
-- Live Site URL: [Github Pages]()
+- Live Site URL: [Github Pages](https://marcosrubi.github.io/Fylo-landing-page-with-two-column-layout/)
 
 
 ### Built with

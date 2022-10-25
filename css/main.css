@@ -21,6 +21,9 @@ body{
 h1{
     line-height: 1.5;
 }
+h2{
+    font-size: 1.1rem;
+}
 p{
     line-height: 1.25;
     font-size: 0.9rem;
@@ -52,11 +55,12 @@ section img{
 }
 form{
     width: 100%;
-    max-width: 500px;
+    max-width: 300px;
     margin: 0px auto;
 }
 .input-group{
     position: relative;
+    margin-top: 2rem;
 }
 .input-group label{
     pointer-events: none;
@@ -144,19 +148,13 @@ header{
 .productive__img{
     flex-grow: 1;
 }
-.hero__content,
-.productive__content{
-    flex-basis: 60%;
-}
+
 .hero__content p{
     margin: 1rem 0;
     padding: 0 1rem;
 }
 
 
-.productive__content h2{
-    font-size: 1.1rem;
-}
 .productive__content p{
     margin: 1rem 0;
     color: var(--Desaturated-Blue);
@@ -260,6 +258,7 @@ footer a{
     background-color: var(--Very-Dark-Blue);
     color: var(--Light-Grayish-Blue);
     padding: 1rem 0;
+    font-size: 0.9rem;
 }
 .attribution a{
     color: var(--Moderate-Cyan);
@@ -270,9 +269,144 @@ footer a{
         justify-content: space-between;
     }
     .flex-column-sm{
-        flex-direction: row;
+        flex-direction: row-reverse;
     }
     .text-center-sm{
         text-align: start;
     }
+    header nav{
+        font-size: 1.1rem;
+    }
+    header .menu a{
+        padding: 1rem 1.5rem;
+    }
+    section{
+        padding: 3rem 0 ;
+    }
+    section img{
+        max-width: 50%;
+    }
+    h1{
+        font-size: 1.2rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    p{
+        font-size: .9rem;
+    }
+    .hero__content,
+    .productive__content{
+        flex-basis: 100%;
+    }
+    .hero__content p{
+        padding: 0;
+    }
+    form{
+        margin:0px;
+    }
+    .signUp{
+        padding: 5rem  0;
+    }
+    .signUp__content p{
+        max-width: 350px;
+    }
+    .signUp form{
+        order: -1;
+        flex-grow: 1;
+        max-width: 40%;
+    }
+    .signUp form button{
+        max-width: 15rem;
+    }
+    footer .d-flex{
+        flex-direction: row;
+    }
+    footer nav{
+        margin-top: 3rem;
+    }
+    
+}
+@media (min-width:1023px){
+    .jc-between-md{
+        justify-content: space-between;
+    }
+    .flex-column-sm{
+        flex-direction: row-reverse;
+    }
+    .text-center-sm{
+        text-align: start;
+    }
+    header nav{
+        font-size: 1.2rem;
+    }
+    header .menu a{
+        padding: 1rem 1.5rem;
+    }
+    section{
+        padding-bottom: 3rem ;
+    }
+    section img{
+        max-width: 100%;
+    }
+    h1{
+        font-size: 2.3rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+
+    .hero__content p{
+        padding: 0;
+    }
+    form{
+        margin:0px;
+    }
+    .form-hero{
+        display: flex;
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+    .form-hero .input-group{
+        width: calc(100% - 1rem );
+        margin: 0;
+    }
+    .form-hero input,
+    .signUp form input{
+        margin-bottom: 0;
+        height: 50px;
+    }
+    .form-hero .btn{
+        max-width: 10rem;
+        margin-left: 1rem;
+    }
+    .input-group label{
+        transform: translate(1rem, 1rem);
+    }
+    .signUp{
+        padding: 5rem  0;
+    }
+    .signUp__content p{
+        max-width: 500px;
+    }
+    .signUp form{
+        order: -1;
+        flex-grow: 1;
+        max-width: 40%;
+    }
+    .signUp form button{
+        height: 50px;
+        margin-top: 1rem;
+        max-width: 15rem;
+    }
+    footer .d-flex{
+        flex-direction: row;
+    }
+    footer nav{
+        margin-top: 3rem;
+    }
+    
 }
