@@ -124,23 +124,35 @@ input[type="email"]:valid ~ label {
     padding: .75rem;
     border-radius: .25rem;
     font-size: .9rem;
+    cursor: pointer;
 }
 .btn-primary{
     color: var(--Light-Grayish-Blue);
     font-weight: 900;
     background-color: var(--Bright-Blue);
     border: none;
+    transition: all 300ms;
 }
-
+.btn-primary:hover{
+    opacity: .8;
+}
 
 header{
     padding: 1.5rem 0;
 }
 .logo{
     max-width: 6rem;
+    transition: all 300ms;
+}
+.logo:hover{
+    transform: scale(1.05);
 }
 .menu a{
     padding: 1rem .5rem;
+    transition: all 300ms;
+}
+.menu a:hover{
+    color: var(--Bright-Blue);
 }
 
 
@@ -162,12 +174,20 @@ header{
 .productive__content .link{
     color: var(--Moderate-Cyan);
     display: inline-flex;
+    transition: all 300ms;
+}
+.productive__content .link:hover{
+    opacity: .8;
+}
+.productive__content .link:hover  span{
+    padding-right: 1rem;
 }
 .productive__content .border-bottom{
     border-bottom: 1px solid var(--Moderate-Cyan);
 }
 .productive__content span{
     padding-right: .5rem;
+    transition: all 300ms;
 }
 img.icon{
     width: 2rem;
@@ -240,16 +260,28 @@ footer li{
 footer a{
     display: block;
     padding: 0.5rem;
+    transition: all 300ms;
+}
+footer a:hover{
+    color: var(--Bright-Blue);
 }
 .social-icons li{
     border-radius: 50%;
     border: 1px solid var(--Light-Grayish-Blue);
     margin: 0 .5rem;
 }
-.social-icons img{
+.social-icons i{
     width: 1rem;
     aspect-ratio: 1/1;
 }
+.social-icons a{
+    text-align: center;
+}
+.social-icons a:hover{
+    color: var(--Bright-Blue);
+}
+
+
 .mx-1{
     margin: 1rem 0;
 }
@@ -262,6 +294,10 @@ footer a{
 }
 .attribution a{
     color: var(--Moderate-Cyan);
+    transition: all 300ms;
+}
+.attribution a:hover{
+    opacity: .7;
 }
 
 @media (min-width:767px){
