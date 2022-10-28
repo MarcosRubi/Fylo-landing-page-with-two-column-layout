@@ -39,6 +39,33 @@ window.onload = () => {
 	});
 
 	// ANIMACIONES
+	const header = document.querySelector('header')
+
+	const sectionHeroTitle = document.querySelector('.hero h1')
+	const sectionHeroParagraph = document.querySelector('.hero p')
+	const sectionHeroFormInputGroup= document.querySelector('.form-hero .input-group')
+	const sectionHeroFormSubmit= document.querySelector('.form-hero button')
+	const sectionHeroImg= document.querySelector('.hero__img')
+
+	const sectionProductiveTitle = document.querySelector('.productive h2')
+	const sectionProductiveParagraphs = document.querySelectorAll('.productive p')
+	const sectionProductiveLink = document.querySelector('.productive .link')
+	const sectionProductiveQuote = document.querySelector('.productive .quote')
+	const sectionProductiveImg = document.querySelector('.productive__img')
+
+	const sectionSignUpTitle = document.querySelector('.signUp__content h2')
+	const sectionSignUpParagraph = document.querySelector('.signUp__content p')
+	const sectionSignUpInput = document.querySelector('.signUp__form input')
+	const sectionSignUpButton = document.querySelector('.signUp__form button')
+
+	const footerColumn1 = document.querySelector('footer .column-1')
+	const footerColumn2 = document.querySelector('footer .column-2')
+	const footerColumn3 = document.querySelector('footer .column-3')
+	const footerColumn4 = document.querySelector('footer .column-4')
+
+	const attribution = document.querySelector('.attribution span')
+
+
 	const startAnimation = (entries, observer) => {
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
@@ -53,5 +80,31 @@ window.onload = () => {
 		threshold: 0.1,
 	});
 
-	observer.observe(formHero);
+	observer.observe(header);
+
+	observer.observe(sectionHeroTitle);
+	observer.observe(sectionHeroParagraph);
+	observer.observe(sectionHeroFormInputGroup);
+	observer.observe(sectionHeroFormSubmit);
+	observer.observe(sectionHeroImg);
+
+	observer.observe(sectionProductiveTitle)
+	sectionProductiveParagraphs.forEach(paragraph => {
+		observer.observe(paragraph)
+	});
+	observer.observe(sectionProductiveLink)
+	observer.observe(sectionProductiveQuote)
+	observer.observe(sectionProductiveImg)
+
+	observer.observe(sectionSignUpTitle)
+	observer.observe(sectionSignUpParagraph)
+	observer.observe(sectionSignUpInput)
+	observer.observe(sectionSignUpButton)
+
+	observer.observe(footerColumn1)
+	observer.observe(footerColumn2)
+	observer.observe(footerColumn3)
+	observer.observe(footerColumn4)
+
+	observer.observe(attribution)
 };
